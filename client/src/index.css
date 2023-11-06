@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700;800&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  font-style: italic;
+}
+
+* {
+  font-family: "Readex Pro", sans-serif;
+}
+
+.primary-title {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+}
+
+.primary-button {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 15px;
+  background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.primary-button:hover {
+  background: linear-gradient(260deg, rgb(254, 48, 114), rgb(255, 89, 64));
+}
+
+.secondary-button {
+  color: rgb(121, 119, 119);
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: solid 2px rgb(121, 119, 119);
+  margin: 6px;
+}
+
+.secondary-button:hover {
+  color: rgb(48, 48, 48);
+  border: solid 2px rgb(48, 48, 48);
+}
+
+/*-------- Navbar --------*/
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-button {
+  color: rgb(254, 48, 114);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+
+nav .nav-button:disabled {
+  background-color: rgb(181, 180, 180);
+  color: rgb(189, 42, 90);
+}
+
+nav .logo-container {
+  width: 170px;
+  margin: 15px;
+}
+
+nav .logo-container .logo {
+  width: 100%;
+}
+
+/*-------- Home page --------*/
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("images/acastro_180822_1777_tinder_0002.jpg");
+}
+
+.home {
+  margin-top: 30vh;
+}
+
+/*-------- Auth Modal --------*/
+.auth-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.auth-modal .close-icon {
+  float: right;
+}
+
+.auth-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-modal input[type="password"],
+.auth-modal input[type="email"] {
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+}
+
+/*-------- OnBoarding Page --------*/
+body {
+  background-color: #f2f2f2;
+}
+
+.onboarding {
+  border-top: solid 1px rgb(213, 213, 213);
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+
+.onboarding form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.onboarding form section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 35%;
+  text-align: start;
+  box-sizing: border-box;
+}
+
+.onboarding form input,
+.onboarding form textarea {
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: solid 2px rgb(219, 219, 219);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+}
+
+.onboarding form label {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.onboarding form .multiple-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.onboarding form .multiple-input-container input {
+  margin-right: 10px;
+}
+
+.onboarding form .multiple-input-container label {
+  padding: 10px;
+  border: solid 2px rgb(144, 144, 144);
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.onboarding form input[type="radio"] {
+  display: none;
+}
+
+.onboarding form input[type="number"] {
+  width: 100%;
+}
+
+.onboarding h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.onboarding form input[type="radio"]:checked + label {
+  border: solid 2px rgb(221, 39, 22);
+}
+
+.onboarding form input[type="submit"] {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.onboarding form input[type="submit"]:active {
+  background-color: rgb(226, 115, 115);
+}
+
+.onboarding form .photo-container img {
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 5px;
+}
+
+/*-------- Dashboard  --------*/
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard .swipe-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.dashboard .card-container {
+  width: 400px;
+  height: 650px;
+}
+
+.card {
+  width: 400px;
+  height: 650px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.dashboard .swipe-info {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+/*-------- Chat Container --------*/
+.chat-container {
+  background-color: rgb(245, 245, 245);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.chat-container .chat-container-header {
+  background: linear-gradient(45deg, rgb(199, 148, 220), rgb(167, 139, 250));
+
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chat-container .option {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 2px rgb(243, 33, 33);
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chat-container .option:disabled {
+  border-bottom: solid 2px rgb(187, 187, 187);
+  cursor: not-allowed;
+}
+
+.chat-container .option:hover:not(:disabled) {
+  background-color: rgb(243, 33, 33);
+  color: white;
+}
+
+.chat-container .profile,
+.chat-container .log-out-icon {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.chat-container .profile h3 {
+  margin-left: 15px;
+}
+
+.chat-container .profile .img-chat-container img {
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.chat-container .log-out-icon:hover {
+  transform: scale(1.1);
+}
+
+.img-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-chat-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img-chat-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-------- Chat Display --------*/
+.chat-display,
+.matches-display {
+  padding: 20px;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+/*-------- Chat Input --------*/
+.chat-input {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bla button {
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #000;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  border: solid 2px rgb(219, 219, 219);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bla button:hover {
+  background-color: rgb(254, 11, 11);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #000;
+  background-color: rgb(235, 235, 235);
+  border: solid 2px rgb(219, 219, 219);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:active {
+  background-color: rgb(226, 115, 115);
+}
+
+.onboarding form input[type="checkbox"] {
+  display: none;
+}
+
+.onboarding form input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.onboarding form input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.onboarding form input[type="checkbox"]:checked + label:before {
+  background: rgb(221, 39, 22);
+}
